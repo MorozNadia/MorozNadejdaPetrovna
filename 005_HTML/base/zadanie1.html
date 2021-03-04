@@ -7,24 +7,77 @@
 <body>
    <p><i>Рекомендации к выполнению работы:</i></p> 
 <ul type="disc">
-    <li>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</li>
-    <li>Каждая форма должна правильно заполненные атрибуты name, method и action.</li>
-    <li>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - небольшой
-        скрипт показывающий переменные переданные методами post и get.</li>
+    <li><i>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</i></li>
+    <li><i>Каждая форма должна правильно заполненные атрибуты name, method и action.</i></li>
+    <li><i>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - небольшой
+        скрипт показывающий переменные переданные методами post и get.</i></li>
 </ul>
 
 
 <table border="0" width="700px" align="center">
 <tr>
-    <th>Простая форма поиска с вариантами:
-        <FIELDSET>
+    <td valign="top"><p><b>Простая форма поиска с вариантами:</b></p>
+        <form action="http://sc.it-academy.by/fe/form.php"  method="POST" name="form1">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                     <p>
+                        <input type="text"  maxlength="10"> 
+                        <input type="submit" value="Искать">
+                    </p>
+                <p><input type="radio">на сайте<input type="radio">в google</p>
+                <p><i>Длина запроса не более 10 символов</i></p>  
 
-            <LEGEND>Строка поиска</LEGEND>
-            
 
-            
-            </FIELDSET>
-    </th>
-    <th>Простая форма поиска с вариантами:</th> 
+            </fieldset>
+
+        </form>
+    </td>
+    <td valign="top"><p><b>Простая форма поиска с вариантами:</b></p>
+        <form action="http://sc.it-academy.by/fe/form.php"  method="POST" name="form2">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                     <p>
+                        <input type="text"  maxlength="10" name="user" required placeholder="обязательное поле" autofocus> 
+                                        
+                        * 
+                        <input type="submit" value="Искать">
+                    </p>
+                
+               
+                <label>
+
+                    <input type="checkbox" name="val_1"  id="chbox1" checked> на сайте
+                    
+                </label>
+                    
+                <label>
+                    
+                    <input type="checkbox" name="val_2" id="chbox2"> в google
+                    
+                </label>
+                <p><i>-* Обязательное поле</i></p> 
+                <p><i>Автофокус в поле поиска</i></p>  
+
+            </fieldset>
+
+        </form>
+    </td>
     
+</tr>
+<tr>
+    <td valign="top"><p><b>Простая форма авторизации:</b></p>
+        <form action="http://sc.it-academy.by/fe/form.php"  method="POST" name="form3">
+            <fieldset>
+                <legend>Авторизуйтесь</legend>
+                <p><input type="text" id="login" name="login"   required placeholder="обязательное поле" autofocus>
+                    <label for="login">*Логин</label></p>
+                <p><input type="password" id="pass" name="password" required placeholder="обязательное поле" autofocus>
+                    <label for="pass">*Пароль:</label></p>
+                <input type="checkbox">Оставаться в системе
+                <p><input type="button" value=" Войти "></p>
+            </fieldset>
+
+        </form>
+
+    </td>
 </tr>
