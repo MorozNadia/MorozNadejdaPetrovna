@@ -85,10 +85,71 @@
         
             <fieldset>
                 <legend>Как вам?</legend>
+                <label>
+
+                  <p> <input type="radio" name="radio_group"
+                    value="value_01" id="Checkbox_Group1_0" checked>ничего </p> 
+                    
+                </label>
+                    
+                <label>
+                    <p><input type="radio" name="radio_group"
+                    value="value_02" id="Checkbox_Group2_0"> неплохо</p>
+                    
+                </label>
+                <label>
+                    <p><input type="radio" name="radio_group"
+                    value="value_03" id="Checkbox_Group3_0"> хорошо</p>
+                    
+                </label>
+                <label>
+                    <p><input type="radio" name="radio_group"
+                    value="value_04" id="Checkbox_Group4_0"> супер</p>
                 
+                </label>
+                <p><input type="submit" value="Отправить"></p>
+                <p><i>Есть скрытое поле</i></p>
+                <input type="hidden" name="date_voite" value="2013.12.31">
             </fieldset>
         </form>
 
 
     </td>
+</tr>
+<tr>
+            <td valign="top"><p><b>Отзыв:</b></p>
+            <form action="http://sc.it-academy.by/fe/form.php"  method="POST" name="form5">
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <p><input type="text" id="login" name="name"  required placeholder="обязательное поле" autofocus>
+                        <label for="name">*Имя</label></p>
+                    <p><input type="email" id="mail" name="email"  method="post" required placeholder="обязательное поле" autofocus>
+                        <label for="mail">*E-mail</label></p>
+                   
+                    <p>
+                        <textarea name="text_area" lang="ru">
+
+                            форма отправки
+                            
+                        </textarea>
+                    </p>
+                    <p><input type="submit" value="Отправить"></p>
+                    <p><i>* - обязательное поле</i></p>
+                    <p><i>поле email - с проверкой</i></p>   
+                    <p><i>метод POST</i> </p>    
+                      
+                </fieldset>
+               
+            </form>
+    
+        </td>
+        <td valign="top"><p><b>Отзыв:</b></p>
+            <form action="http://sc.it-academy.by/fe/form.php"  method="POST" name="form5">
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                </fieldset>
+                </form>
+                
+
+                </td>
 </tr>
