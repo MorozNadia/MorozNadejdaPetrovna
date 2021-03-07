@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <table border="0" width="700px" align="center">
+    
+            <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form1">
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <p><input type="text" name="famil" pattern="^[a-zA-Z]+$\s" maxlength="25" required placeholder="Фамилия" autofocus>
+                    text: Только кириллица, без пробелов,длина поля 25, обязательное поле, автофокус на данном поле</p>
+                    <p><input type="text" name="imia" pattern="^[a-zA-Z]+$" maxlength="20" required placeholder="Имя">
+                    text: Только кириллица, без пробелов,длина поля 20, обязательное поле</p>
+                    <p><input type="text" name="ochestvo" pattern="^[a-zA-Z]+$" maxlength="24" required placeholder="Имя">
+                    text: Только кириллица, без пробелов,длина поля 24, обязательное поле</p>
+                    
+                    
+                        <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
+                            <fieldset>
+                                <legend>Паспортные данные</legend>
+                                <p>text: Только заглавные латинские буквы с длиной поля 2,количество букв не менее 2,обязательное поле</p>
+                                <p>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество символов не менее 7, обязательное поле</p>
+                                <input type="text" name="seria" pattern="[A-Z]{2,}" maxlength="2" required placeholder="обязательное поле">
+                                <input type="text" name="nambe" pattern="[0-9]{3,}" maxlength="7" required placeholder="обязательное поле">
+
+
+
+                                
+                            </fieldset>
+                        </form>
+                    
+                    d;lfl;k;kds;lf
+
+            
+                </fieldset>
+            </form>
+        
+        
+    </table>
+
+                    
+
+</body>
+</html>
