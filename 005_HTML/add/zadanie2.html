@@ -11,7 +11,7 @@
             <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form1">
                 <fieldset>
                     <legend>Личные данные</legend>
-                    <p><input type="text" name="famil" pattern="^[a-zA-Z]+$\s" maxlength="25" required placeholder="Фамилия" autofocus>
+                    <p><input type="text" name="famil" pattern="^[a-zA-Z]+$" maxlength="25" required placeholder="Фамилия" autofocus>
                     text: Только кириллица, без пробелов,длина поля 25, обязательное поле, автофокус на данном поле</p>
                     <p><input type="text" name="imia" pattern="^[a-zA-Z]+$" maxlength="20" required placeholder="Имя">
                     text: Только кириллица, без пробелов,длина поля 20, обязательное поле</p>
@@ -19,25 +19,72 @@
                     text: Только кириллица, без пробелов,длина поля 24, обязательное поле</p>
                     
                     
-                        <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
+                    <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
                             <fieldset>
                                 <legend>Паспортные данные</legend>
                                 <p>text: Только заглавные латинские буквы с длиной поля 2,количество букв не менее 2,обязательное поле</p>
                                 <p>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество символов не менее 7, обязательное поле</p>
                                 <input type="text" name="seria" pattern="[A-Z]{2,}" maxlength="2" required placeholder="обязательное поле">
-                                <input type="text" name="nambe" pattern="[0-9]{3,}" maxlength="7" required placeholder="обязательное поле">
-
-
-
-                                
-                            </fieldset>
-                        </form>
+                                <input type="text" name="nambe" pattern="[0-9]{1,7}" maxlength="7" required placeholder="обязательное поле">
                     
-                    d;lfl;k;kds;lf
+                            </fieldset>  
+                    </form>
+                    <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form3">
+                            <fieldset>
+                                <legend>Дата рождения</legend>
+                                <p> <input type="text" name="god"  pattern="[0-9]{1,4}" maxlength="4">text: Год рождения 4-е цифры</p>
+                                <p>
+                                    <select name="mesiat" id="mesiat">
+                                        <option value="12">Декабрь</option>
+                                        <option value="1">Январь</option>
+                                        <option value="2">Февраль</option>
+                                        <option value="3">Март</option>
+                                        <option value="4">Апрель</option>
+                                        <option value="5">Май</option>
+                                        <option value="6">Июнь</option>
+                                        <option value="7">Июль</option>
+                                        <option value="8">Август</option>
+                                        <option value="9">Сентябрь</option>
+                                        <option value="10">Октябрь</option>
+                                        <option value="11">Ноябрь</option>
 
-            
+                                    </select> 
+                                select: Месяц рождения
+                                </p>
+                                <p><input type="number" name="tislo" min="1" max="31" step="1" > Диапазон от 1 до 31, с шагом 1</p>
+                                                 
+                    
+                            </fieldset>  
+                        </form>
+
+                            <select name="nat" id="nat">         
+                                <option value="0">башкорт</option>
+                                <option value="1">башкурт</option>
+                                <option value="2">бежитинцы</option>
+                                <option value="3">бежтинцы</option>
+                                <option value="4">белорусы</option>
+                                <option value="5">белуджи</option>
+                                <option value="6">бенгали</option>
+                                <option value="7">бенгальцы</option>
+                                <option value="8">бепся</option>
+                                <option value="9">берш</option>
+                                <option value="10">РБ</option>
+                                <option value="11">РФ</option>
+
+                            </select>     
+                            Национальность
+                            <p>Адрес:</p>
+                            <p><textarea name="text_area" lang="ru">
+
+                                Текст по умолчанию
+                                
+                                </textarea>  
+                            </p>    
                 </fieldset>
+                
+
             </form>
+
         
         
     </table>
