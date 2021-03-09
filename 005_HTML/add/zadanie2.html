@@ -16,7 +16,7 @@
                     text: Только кириллица, без пробелов,длина поля 25, обязательное поле, автофокус на данном поле</p>
                     <p><input type="text" name="imia" pattern="^[a-zA-Z]+$" maxlength="20" required placeholder="Имя">
                     text: Только кириллица, без пробелов,длина поля 20, обязательное поле</p>
-                    <p><input type="text" name="ochestvo" pattern="^[a-zA-Z]+$" maxlength="24" required placeholder="Имя">
+                    <p><input type="text" name="ochestvo" pattern="^[a-zA-Z]+$" maxlength="24" required placeholder="Отчество">
                     text: Только кириллица, без пробелов,длина поля 24, обязательное поле</p>
                     
                     
@@ -82,8 +82,7 @@
                 </fieldset>
                 
 
-            </form>
-            <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
+            
                 <fieldset>
                     <legend>Интересы</legend>
                     <fieldset>
@@ -127,6 +126,7 @@
                             <option value="7" >Стая ворон</option>
                             <option value="8" >Аист</option>
                             <option value="9">Архиоптерикс</option>
+                        </select>
                     </fieldset>
                 </fieldset>
                 
@@ -139,18 +139,36 @@
                      <p><input type="password" name="pass" pattern="^[a-zA-Z]+$" pattern="[A-Za-z]{10,}" maxlength="20"  autocomplete="off" required placeholder="Пароль">
                         text: Только латиница, без пробелов,длина поля 20,не менее 10 символов, обязательное поле, отключить автозаполнение</p>
                 </fieldset>
-                </form>
-
                 
                 
-                
-
-
-        
-        
-    </table>
-
+                    <fieldset>
+                        <legend>Координаты</legend>
+                        <p><input type="email" name="adres" required placeholder="Введите адрес почты">
+                            email: Проверка должна осуществляться при помощи других атрибутов тега input</p>
+                         <p><input type="url" name="sayt" required placeholder="Введите адрес сайта">
+                            url: Проверка должна осуществляться при помощи других атрибутов тега input</p>
+                    </fieldset>
                     
 
+                    
+                
+                        <fieldset>
+                            <legend>Цифры</legend>
+                           <p><input type="number" min="-2.5" max="2.5"step="0.1"></p> 
+                           <input type="range" min="1" max="10">
+                        </fieldset>
+                        
+
+                       
+                            <fieldset>
+                                <legend>Кнопки управления</legend>
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сбросить"><br>
+                        <input type="image" src="email.png">
+                    
+                            </fieldset>
+            </form>
+                        
+                    </table>
 </body>
 </html>
