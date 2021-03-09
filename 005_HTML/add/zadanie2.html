@@ -9,6 +9,7 @@
     <table border="0" width="700px" align="center">
     
             <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form1">
+
                 <fieldset>
                     <legend>Личные данные</legend>
                     <p><input type="text" name="famil" pattern="^[a-zA-Z]+$" maxlength="25" required placeholder="Фамилия" autofocus>
@@ -19,17 +20,16 @@
                     text: Только кириллица, без пробелов,длина поля 24, обязательное поле</p>
                     
                     
-                    <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
-                            <fieldset>
+                   <fieldset>
                                 <legend>Паспортные данные</legend>
                                 <p>text: Только заглавные латинские буквы с длиной поля 2,количество букв не менее 2,обязательное поле</p>
                                 <p>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество символов не менее 7, обязательное поле</p>
                                 <input type="text" name="seria" pattern="[A-Z]{2,}" maxlength="2" required placeholder="обязательное поле">
                                 <input type="text" name="nambe" pattern="[0-9]{1,7}" maxlength="7" required placeholder="обязательное поле">
                     
-                            </fieldset>  
-                    </form>
-                    <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form3">
+                   </fieldset>  
+                    
+                    
                             <fieldset>
                                 <legend>Дата рождения</legend>
                                 <p> <input type="text" name="god"  pattern="[0-9]{1,4}" maxlength="4">text: Год рождения 4-е цифры</p>
@@ -55,8 +55,7 @@
                                                  
                     
                             </fieldset>  
-                        </form>
-
+                        
                             <select name="nat" id="nat">         
                                 <option value="0">башкорт</option>
                                 <option value="1">башкурт</option>
@@ -84,6 +83,68 @@
                 
 
             </form>
+            <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form2">
+                <fieldset>
+                    <legend>Интересы</legend>
+                    <fieldset>
+                        <legend>Хобби</legend>
+                        <label>
+
+                            <input type="checkbox" name="hobby[]"> Рыбалка
+                            
+                            </label><br>
+                            
+                            <label>
+                            
+                            <input type="checkbox" name="hobby[]"> Астрономия
+                            
+                            </label><br>
+                            
+                            <label>
+                            
+                            <input type="checkbox" name="hobby[]"> Дайвинг
+                                                        
+                            </label><br>
+                            <label>
+                            
+                                <input type="checkbox" name="hobby[]"> Марки
+                                
+                                </label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Домашние животные</legend>
+                        
+                        <select name="list[]" size="12" multiple id="list">
+                            <optgroup label="Попугаи"></optgroup>
+                            <option value="1" >Волнистый</option>
+                            <option value="2" >Ара</option>
+                            <option value="3">Неразлучник</option>
+                            <optgroup label="Рыба"></optgroup>
+                            <option value="4" >Караси</option>
+                            <option value="5" >Окуни</option>
+                            <option value="6">Осетр</option>
+                            <optgroup label="Птицы"></optgroup>
+                            <option value="7" >Стая ворон</option>
+                            <option value="8" >Аист</option>
+                            <option value="9">Архиоптерикс</option>
+                    </fieldset>
+                </fieldset>
+                </form>
+            
+                <form action="http://fe.it-academy.by/TestForm.php"  method="POST" name="form3">
+                <fieldset>
+                    <legend>Данные для входа и востановления пароля</legend>
+                    <p><input type="text" name="logo" pattern="^[a-zA-Z]+$" pattern="[A-Za-z]{5,}" maxlength="20" required placeholder="Логин">
+                        text: Только латиница, без пробелов,длина поля 20,не менее 5 символов, обязательное поле</p>
+                     <p><input type="password" name="pass" pattern="^[a-zA-Z]+$" pattern="[A-Za-z]{10,}" maxlength="20"  autocomplete="off" required placeholder="Пароль">
+                        text: Только латиница, без пробелов,длина поля 20,не менее 10 символов, обязательное поле, отключить автозаполнение</p>
+                </fieldset>
+                </form>
+                
+                
+                
+                
+
 
         
         
