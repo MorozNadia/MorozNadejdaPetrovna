@@ -6,28 +6,33 @@
 <style>
 .leftbloc
 {
-    
-    width: 15em;
+    display: flexbox;
+    text-align: left;
+    align-self: flex-start;
+     width: 20%;
+    align-content: stretch;
     background-color: darkgray;
-    float: left;
+    
 }
 .statia1
 {
     
-  
-    
+    display: flexbox;
+    text-align: left;
+    width: 80%;
+    align-self:flex-start;
+    justify-content: flex-start;
+
     background-color: darkkhaki;
+    align-content: stretch;
     background-repeat: no-repeat;
     background-position: right;
     margin-bottom: .2em;
-    margin-left: 15em;
-    
-    
 }
 
 .footer
 {
-    
+    display: flexbox;
     background-color: rgb(216, 41, 79);
     float:none;
     margin-bottom: 2em;
@@ -40,9 +45,10 @@
 </head>
 
 <body>
-    <div style="background-color: cadetblue;">
+    <div>
 <div class="leftbloc">
     <h3>Блок навигации</h3>
+    
     <ul>
         <li>Ширина 15еm</li>
         <li>Должен присутствовать цвет фона</li>
@@ -50,6 +56,7 @@
         <li>Блок навигации заполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
 
     </ul>
+
 
 </div>
 
@@ -70,10 +77,11 @@
     <p>Картинка вставлена при помощи тега, плаванье организовано по правому краювнутри данной статьи для этой картинки</p>
    <p align="right"><img src="icon_mail.png"></p>
 </div>
-</div>
+
 <div class="footer">
     Нижний блок, подвал. Занимает всю доступную ширину.Высота определяется помещенным внутрь контентом.
 
+</div>
 </div>
 
 </body>
